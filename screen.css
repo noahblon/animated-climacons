@@ -1,15 +1,54 @@
 /* VARIABLES */
-.featured {
-  height: 75%;
-  overflow: hidden;
+svg {
+  float: left;
+  shape-rendering: geometric-precision;
 }
 
-.featured .climacon {
-  height: 66%;
-  width: 66%;
-  float: none;
+@media only screen and (min-width: 480px) {
+  svg {
+    width: 50%;
+  }
 }
-
+@media only screen and (min-width: 600px) {
+  svg {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  svg {
+    width: 33.333%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  svg {
+    width: 25%;
+  }
+}
+@media only screen and (max-height: 319px) {
+  svg {
+    height: 29%;
+  }
+}
+@media only screen and (min-height: 320px) {
+  svg {
+    height: 22%;
+  }
+}
+@media only screen and (min-height: 768px) {
+  svg {
+    height: 30%;
+  }
+}
+@media only screen and (min-height: 1000px) {
+  svg {
+    height: 30%;
+  }
+}
+@media only screen and (min-height: 1400px) {
+  svg {
+    height: 22%;
+  }
+}
 .climacon_component-stroke {
   fill: white;
   stroke-width: 0px;
@@ -17,19 +56,11 @@
 }
 
 .climacon_component-fill {
-  fill: #d6ecf7;
+  fill: #aedef4;
   stroke-width: 0px;
   stroke: white;
 }
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-  .climacon_component-stroke {
-    stroke-opacity: 1;
-    stroke-width: 2%;
-    stroke: #abd9ee;
-  }
-}
 /* GLOBAL */
 *, *:after, *:before {
   box-sizing: border-box;
@@ -41,38 +72,21 @@ html, body {
 }
 
 body {
-  background: lightskyblue;
+  background: #6bc2ea;
   font-family: Lato, sans-serif;
   color: white;
   font-size: 100%;
   line-height: 1;
 }
 
-h2 {
-  font-weight: 300;
-  width: 25%;
-  display: block;
-  margin: 0 auto;
-}
-
-h3 {
-  font-weight: 700;
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-}
-
 .wrapper {
   width: 60%;
   margin: 0 auto;
-  overflow: hidden;
   text-align: center;
 }
 
 /* SVG GLOBAL */
 svg {
-  width: 25%;
-  height: 25%;
   float: left;
   shape-rendering: geometricPrecision;
 }
@@ -91,7 +105,7 @@ g, path, circle, rect {
 }
 
 .climacon_componentWrap_sunSpoke .climacon_component-stroke_sunSpoke {
-  animation-name: sunSpokeScale;
+  animation-name: scale;
   animation-direction: alternate;
   animation-duration: 3s;
 }
@@ -376,6 +390,19 @@ g, path, circle, rect {
   animation-duration: 3s;
 }
 
+.climacon_componentWrap-sunrise .climacon_component-stroke_sunSpoke, .climacon_componentWrap-sunset .climacon_component-stroke_sunSpoke {
+  animation-name: scale;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 0;
+  animation-fill-mode: both;
+}
+
+.climacon_componentWrap-sunrise .climacon_component-stroke_sunSpoke:nth-child(even), .climacon_componentWrap-sunset .climacon_component-stroke_sunSpoke:nth-child(even) {
+  animation-delay: 3s;
+}
+
 .climacon_componentWrap-sunriseAlt {
   animation-name: translateSunrise, fillOpacity;
   animation-duration: 12s, 6s;
@@ -387,6 +414,7 @@ g, path, circle, rect {
 .climacon_componentWrap-sunriseAlt .climacon_component-stroke_sunSpoke {
   fill-opacity: 0;
   animation-name: fillOpacity, scale;
+  animation-direction: normal, alternate;
   animation-iteration-count: 1, infinite;
   animation-duration: 3s;
   animation-delay: 3s, 0;
@@ -495,7 +523,7 @@ g, path, circle, rect {
 
 @keyframes hailLeft {
   50% {
-    transform: translateY(17.5px);
+    transform: translateY(4.375px);
   }
 
   51% {
@@ -2203,11 +2231,11 @@ g, path, circle, rect {
   }
 
   25% {
-    transform: translateX(4px);
+    transform: translateX(3.997px);
   }
 
   75% {
-    transform: translateX(-4px);
+    transform: translateX(-3.997px);
   }
 
   100% {
@@ -2221,11 +2249,11 @@ g, path, circle, rect {
   }
 
   25% {
-    transform: translateX(2px);
+    transform: translateX(2.002px);
   }
 
   75% {
-    transform: translateX(-2px);
+    transform: translateX(-2.002px);
   }
 
   100% {
@@ -2239,11 +2267,11 @@ g, path, circle, rect {
   }
 
   25% {
-    transform: translateX(8px);
+    transform: translateX(8.001px);
   }
 
   75% {
-    transform: translateX(-8px);
+    transform: translateX(-8.001px);
   }
 
   100% {
@@ -2257,11 +2285,11 @@ g, path, circle, rect {
   }
 
   25% {
-    transform: translateX(6px);
+    transform: translateX(5.999px);
   }
 
   75% {
-    transform: translateX(-6px);
+    transform: translateX(-5.999px);
   }
 
   100% {
@@ -2275,11 +2303,11 @@ g, path, circle, rect {
   }
 
   25% {
-    transform: translateX(10px);
+    transform: translateX(10.003px);
   }
 
   75% {
-    transform: translateX(-10px);
+    transform: translateX(-10.003px);
   }
 
   100% {
@@ -2293,11 +2321,11 @@ g, path, circle, rect {
   }
 
   25% {
-    transform: translateX(6px);
+    transform: translateX(5.999px);
   }
 
   75% {
-    transform: translateX(-6px);
+    transform: translateX(-5.999px);
   }
 
   100% {
@@ -2358,11 +2386,11 @@ g, path, circle, rect {
   }
 
   25% {
-    transform: translateX(2.5px);
+    transform: translateX(2.499px);
   }
 
   75% {
-    transform: translateX(-2.5px);
+    transform: translateX(-2.499px);
   }
 
   100% {
@@ -2393,45 +2421,45 @@ g, path, circle, rect {
   }
 
   25% {
-    transform: translateY(-16px);
+    transform: translateY(-16.002px);
   }
 
   100% {
-    transform: translateY(-16px);
+    transform: translateY(-16.002px);
   }
 }
 
 @keyframes translateSunset {
   0% {
-    transform: translateY(-16px);
+    transform: translateY(-16.002px);
   }
 
   25% {
-    transform: translateY(-4px);
+    transform: translateY(-3.997px);
   }
 
   100% {
-    transform: translateY(-4px);
+    transform: translateY(-3.997px);
   }
 }
 
 @keyframes translateArrowDown {
   0% {
-    transform: translateY(2px);
+    transform: translateY(2.002px);
   }
 
   100% {
-    transform: translateY(5px);
+    transform: translateY(4.998px);
   }
 }
 
 @keyframes translateArrowUp {
   0% {
-    transform: translateY(-2px);
+    transform: translateY(-2.002px);
   }
 
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-4.998px);
   }
 }
 
@@ -2441,11 +2469,11 @@ g, path, circle, rect {
   }
 
   25% {
-    transform: translateX(5px);
+    transform: translateX(4.998px);
   }
 
   75% {
-    transform: translateX(-5px);
+    transform: translateX(-4.998px);
   }
 
   100% {
