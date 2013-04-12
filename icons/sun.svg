@@ -40,32 +40,39 @@
         }
 
         .climacon_componentWrap-sun{
+        
             -webkit-animation-name: rotate;
             -moz-animation-name: rotate;
             -o-animation-name: rotate;
             animation-name: rotate;
         }
 
-        .climacon_component-stroke_sunSpoke{
+        .climacon_component-stroke_sunSpoke {
+
             -webkit-animation-name: scale;
             -moz-animation-name: scale;
             -o-animation-name: scale;
             animation-name: scale;
+
             -webkit-animation-direction: alternate;
             -moz-animation-direction: alternate;
             -o-animation-direction: alternate;
             animation-direction: alternate;
+
             -webkit-animation-duration: 3s;
             -moz-animation-duration: 3s;
             -o-animation-duration: 3s;
             animation-duration: 3s;
+
         }
 
-        .climacon_component-stroke_sunSpoke:nth-child(even){
+        .climacon_component-stroke_sunSpoke:nth-child(even) {
+
             -webkit-animation-delay: 3s;
             -moz-animation-delay: 3s;
             -o-animation-delay: 3s;
             animation-delay: 3s;
+
         }
 
         @-webkit-keyframes rotate{
@@ -109,37 +116,37 @@
 
         @-webkit-keyframes scale{
             0%{
-                -webkit-transform: scale(1,1)
+                -webkit-transform: scale(1,1);
             }
             100%{
-                -webkit-transform: scale(.5,.5)
+                -webkit-transform: scale(.5,.5);
             }   
         }
 
         @-moz-keyframes scale{
             0%{
-                -moz-transform: scale(1,1)
+                -moz-transform: scale(1,1);
             }
             100%{
-                -moz-transform: scale(.5,.5)
+                -moz-transform: scale(.5,.5);
             }   
         }
 
         @-o-keyframes scale{
             0%{
-                -o-transform: scale(1,1)
+                -o-transform: scale(1,1);
             }
             100%{
-                -o-transform: scale(.5,.5)
+                -o-transform: scale(.5,.5);
             }   
         }
 
         @keyframes scale{
             0%{
-                transform: scale(1,1)
+                transform: scale(1,1);
             }
             100%{
-                transform: scale(.5,.5)
+                transform: scale(.5,.5);
             }   
         }
 
