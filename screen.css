@@ -94,31 +94,30 @@ svg {
       
 g, path, circle, rect{
 
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -o-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -o-animation-timing-function: linear;
 
-    -o-animation-direction: normal;
-    animation-direction: normal;
-    -webkit-animation-direction: normal;
-    -moz-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
 
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 
-    -moz-animation-duration: 12s;
-    -webkit-animation-duration: 12s;
-    -o-animation-duration: 12s;
-    animation-duration: 12s;
-
+  -moz-animation-duration: 12s;
+  -webkit-animation-duration: 12s;
+  -o-animation-duration: 12s;
+  animation-duration: 12s;
 }
 
 /* SUN */
@@ -210,77 +209,146 @@ g, path, circle, rect{
 }
 
 
-
 /* CLOUD SUN */
 .climacon_componentWrap-sun_cloud {
+
+  -webkit-animation-name: behindCloudMove, rotate;
+  -moz-animation-name: behindCloudMove, rotate;
+  -o-animation-name: behindCloudMove, rotate;
   animation-name: behindCloudMove, rotate;
+
+  -webkit-animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+  -o-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite;
+
+  -webkit-animation-timing-function: ease-out, linear;
+  -moz-animation-timing-function: ease-out, linear;
+  -o-animation-timing-function: ease-out, linear;
   animation-timing-function: ease-out, linear;
+
+  -webkit-animation-delay: 0, 3s;
+  -moz-animation-delay: 0, 3s;
+  -o-animation-delay: 0, 3s;
   animation-delay: 0, 3s;
+
+  -webkit-animation-duration: 3s, 12s;
+  -moz-animation-duration: 3s, 12s;
+  -o-animation-duration: 3s, 12s;
   animation-duration: 3s, 12s;
+
 }
 
-.climacon_componentWrap-sun_cloud .climacon_componentWrap_sunSpoke .climacon_component-stroke_sunSpoke {
+.climacon_component-stroke_sunSpoke {
   fill-opacity: 0;
+  -webkit-animation-name: fillOpacity, scale;
+  -moz-animation-name: fillOpacity, scale;
+  -o-animation-name: fillOpacity, scale;
   animation-name: fillOpacity, scale;
+
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+
+  -webkit-animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+  -o-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite;
+
+  -webkit-animation-delay: 3s, 0;
+  -moz-animation-delay: 3s, 0;
+  -o-animation-delay: 3s, 0;
   animation-delay: 3s, 0;
+
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
   animation-fill-mode: both;
+
 }
 
-.climacon_componentWrap-sun_cloud .climacon_componentWrap_sunSpoke .climacon_component-stroke_sunSpoke:nth-child(even) {
+.climacon_component-stroke_sunSpoke:nth-child(even) {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
   animation-delay: 3s;
+
 }
 
 /* CLOUD MOON */
 .climacon_componentWrap-moon_cloud {
-  animation-name: behindCloudMove, partialRotate;
+  -webkit-animation-name: behindCloudMove, wobble;
+  -moz-animation-name: behindCloudMove, wobble;
+  -o-animation-name: behindCloudMove, wobble;
+  animation-name: behindCloudMove, wobble;
+
+  -webkit-animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+  -o-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite;
+
+  -webkit-animation-timing-function: ease-out, linear;
+  -moz-animation-timing-function: ease-out, linear;
+  -o-animation-timing-function: ease-out, linear;
   animation-timing-function: ease-out, linear;
+
+  -webkit-animation-delay: 0, 3s;
+  -moz-animation-delay: 0, 3s;
+  -o-animation-delay: 0, 3s;
   animation-delay: 0, 3s;
+
+  -webkit-animation-duration: 3s, 12s;
+  -moz-animation-duration: 3s, 12s;
+  -o-animation-duration: 3s, 12s;
   animation-duration: 3s, 12s;
 }
 
 /* DRIZZLE */
 .climacon_component-stroke_drizzle {
-    fill-opacity: 0;
+  fill-opacity: 0;
 
-    -webkit-animation-name: drizzleFall, fillOpacity2;
-    -moz-animation-name: drizzleFall, fillOpacity2;
-    -o-animation-name: drizzleFall, fillOpacity2;
-    animation-name: drizzleFall, fillOpacity2;
+  -webkit-animation-name: drizzleFall, fillOpacity2;
+  -moz-animation-name: drizzleFall, fillOpacity2;
+  -o-animation-name: drizzleFall, fillOpacity2;
+  animation-name: drizzleFall, fillOpacity2;
 
-    -webkit-animation-timing-function: ease-in;
-    -moz-animation-timing-function: ease-in;
-    -o-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
 
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
 
 }
 
 .climacon_component-stroke_drizzle:nth-child(1) {
-    -webkit-animation-delay: 0s;
-    -moz-animation-delay: 0s;
-    -o-animation-delay: 0s;
-    animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .climacon_component-stroke_drizzle:nth-child(2) {
-    -webkit-animation-delay: 0.6s;
-    -moz-animation-delay: 0.6s;
-    -o-animation-delay: 0.6s;
-    animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .climacon_component-stroke_drizzle:nth-child(3) {
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-delay: 1.2s;
-    -o-animation-delay: 1.2s;
-    animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 
@@ -323,18 +391,18 @@ g, path, circle, rect{
 /* HAIL */
 /* HAIL ALT */
 .climacon_component-stroke_hailAlt {
-    
-    fill-opacity: 0;
 
-    -webkit-animation-timing-function: ease-in;
-    -moz-animation-timing-function: ease-in;
-    -o-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+  fill-opacity: 0;
 
-    -webkit-animation-duration: 0.66667s;
-    -moz-animation-duration: 0.66667s;
-    -o-animation-duration: 0.66667s;
-    animation-duration: 0.66667s;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+
+  -webkit-animation-duration: 0.66667s;
+  -moz-animation-duration: 0.66667s;
+  -o-animation-duration: 0.66667s;
+  animation-duration: 0.66667s;
 
 }
 
@@ -421,244 +489,242 @@ g, path, circle, rect{
 /* SNOW */
 .climacon_component-stroke_snow {
   fill-opacity: 0;
+
+  -webkit-animation-name: snowFall, fillOpacity2;
+  -moz-animation-name: snowFall, fillOpacity2;
+  -o-animation-name: snowFall, fillOpacity2;
   animation-name: snowFall, fillOpacity2;
+
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  -o-animation-duration: 6s;
   animation-duration: 6s;
 }
 
 .climacon_component-stroke_snow:nth-child(3) {
+  -webkit-animation-name: snowFall2, fillOpacity2;
+  -moz-animation-name: snowFall2, fillOpacity2;
+  -o-animation-name: snowFall2, fillOpacity2;
   animation-name: snowFall2, fillOpacity2;
 }
 
 .climacon_component-stroke_snow:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
   animation-delay: 0s;
 }
 
 .climacon_component-stroke_snow:nth-child(2) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
   animation-delay: 2s;
 }
 
 .climacon_component-stroke_snow:nth-child(3) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
   animation-delay: 4s;
 }
 
 /* SNOW ALT */
-.climacon_wrapperComponent-snowAlt {
+
+.climacon_component-snowAlt {
   fill-opacity: 0;
+
+  -webkit-animation-name: snowFall, fillOpacity2;
+  -moz-animation-name: snowFall, fillOpacity2;
+  -o-animation-name: snowFall, fillOpacity2;
   animation-name: snowFall, fillOpacity2;
+
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  -o-animation-duration: 6s;
   animation-duration: 6s;
 }
 
 /* FOG */
 .climacon_component-stroke_fogLine {
-    
-    fill-opacity: 0.5;
-  
-    -webkit-animation-name: translateFog, fillOpacityFog;
-    -moz-animation-name: translateFog, fillOpacityFog;
-    -o-animation-name: translateFog, fillOpacityFog;
-    animation-name: translateFog, fillOpacityFog;
 
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
+  fill-opacity: 0.5;
 
-    -webkit-animation-direction: normal;
-    -moz-animation-direction: normal;
-    -o-animation-direction: normal;
-    animation-direction: normal;
-
-    -webkit-animation-timing-function: ease-in;
-    -moz-animation-timing-function: ease-in;
-    -o-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-
-    -webkit-animation-duration: 12s;
-    -moz-animation-duration: 12s;
-    -o-animation-duration: 12s;
-    animation-duration: 12s;
-
-}
-
-.climacon_component-stroke_fogLine:nth-child(even) {
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
-}
-
-
-/* LIGHTNING */
-.climacon_component-stroke_lightning {
-    fill-opacity: 0;
-    -webkit-animation-name: lightningFlash;
-    -moz-animation-name: lightningFlash;
-    -o-animation-name: lightningFlash;
-    animation-name: lightningFlash;
-
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-
-    -webkit-animation-direction: normal;
-    -moz-animation-direction: normal;
-    -o-animation-direction: normal;
-    animation-direction: normal;
-
-    -webkit-animation-timing-function: ease-out;
-    -moz-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-
-    -webkit-animation-duration: 12s;
-    -moz-animation-duration: 12s;
-    -o-animation-duration: 12s;
-    animation-duration: 12s;
-
-}
-
-/* TORNADO */
-.climacon_component-stroke_tornadoLine{
-    -webkit-animation-name:  translateTornado1;
-    -moz-animation-name:  translateTornado1;
-    -o-animation-name:  translateTornado1;
-    animation-name:  translateTornado1;
-
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -o-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-direction: alternate;
-
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-timing-function: ease-in-out;
-    -o-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-
-    -webkit-animation-duration: 12s;
-    -moz-animation-duration: 12s;
-    -o-animation-duration: 12s;
-    animation-duration: 12s;
-}
- 
-.climacon_component-stroke_tornadoLine:nth-child(1){
-    -webkit-animation-name:  translateTornado1;
-    -moz-animation-name:  translateTornado1;
-    -o-animation-name:  translateTornado1;
-    animation-name:  translateTornado1;
-}
-
-.climacon_component-stroke_tornadoLine:nth-child(2){
-    -webkit-animation-name:  translateTornado2;
-    -moz-animation-name:  translateTornado2;
-    -o-animation-name:  translateTornado2;
-    animation-name:  translateTornado2;
-}
-
-.climacon_component-stroke_tornadoLine:nth-child(3){
-    -webkit-animation-name:  translateTornado3;
-    -moz-animation-name:  translateTornado3;
-    -o-animation-name:  translateTornado3;
-    animation-name:  translateTornado3;
-}
-
-.climacon_component-stroke_tornadoLine:nth-child(4){
-    -webkit-animation-name:  translateTornado4;
-    -moz-animation-name:  translateTornado4;
-    -o-animation-name:  translateTornado4;
-    animation-name:  translateTornado4;
-}
-
-.climacon_component-stroke_tornadoLine:nth-child(5){
-    -webkit-animation-name:  translateTornado5;
-    -moz-animation-name:  translateTornado5;
-    -o-animation-name:  translateTornado5;
-    animation-name:  translateTornado5;
-}
-
-.climacon_component-stroke_tornadoLine:nth-child(6){
-    -webkit-animation-name:  translateTornado6;
-    -moz-animation-name:  translateTornado6;
-    -o-animation-name:  translateTornado6;
-    animation-name:  translateTornado6;
-}
-
-.climacon_component-stroke_arrow-up {
-
-    fill-opacity: 0;
-
-    -webkit-animation-name: fillOpacity2, translateArrowUp;
-    -moz-animation-name: fillOpacity2, translateArrowUp;
-    -o-animation-name: fillOpacity2, translateArrowUp;
-    animation-name: fillOpacity2, translateArrowUp;
-
-    -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    -o-animation-duration: 3s;
-    animation-duration: 3s;
-
-}
-
-.climacon_component-stroke_arrow-down {
-    
-    fill-opacity: 0;
-
-    -webkit-animation-name: fillOpacity2, translateArrowDown;
-    -moz-animation-name: fillOpacity2, translateArrowDown;
-    -o-animation-name: fillOpacity2, translateArrowDown;
-    animation-name: fillOpacity2, translateArrowDown;
-
-    -webkit-animation-duration: 3s;
-    -moz-animation-duration: 3s;
-    -o-animation-duration: 3s;
-    animation-duration: 3s;
-
-}
-
-.climacon_componentWrap-sunrise .climacon_component-stroke_sunSpoke, .climacon_componentWrap-sunset .climacon_component-stroke_sunSpoke {
-  -webkit-animation-name: scale;
-  -moz-animation-name: scale;
-  -o-animation-name: scale;
-  animation-name: scale;
-
-  -webkit-animation-direction: alternate;
-  -moz-animation-direction: alternate;
-  -o-animation-direction: alternate;
-  animation-direction: alternate;
+  -webkit-animation-name: translateFog, fillOpacityFog;
+  -moz-animation-name: translateFog, fillOpacityFog;
+  -o-animation-name: translateFog, fillOpacityFog;
+  animation-name: translateFog, fillOpacityFog;
 
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+
+  -webkit-animation-duration: 12s;
+  -moz-animation-duration: 12s;
+  -o-animation-duration: 12s;
+  animation-duration: 12s;
+
+}
+
+.climacon_component-stroke_fogLine:nth-child(even) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+
+/* LIGHTNING */
+.climacon_component-stroke_lightning {
+  fill-opacity: 0;
+  -webkit-animation-name: lightningFlash;
+  -moz-animation-name: lightningFlash;
+  -o-animation-name: lightningFlash;
+  animation-name: lightningFlash;
+
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
+
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+
+  -webkit-animation-duration: 12s;
+  -moz-animation-duration: 12s;
+  -o-animation-duration: 12s;
+  animation-duration: 12s;
+
+}
+
+/* TORNADO */
+.climacon_component-stroke_tornadoLine{
+  -webkit-animation-name:  translateTornado1;
+  -moz-animation-name:  translateTornado1;
+  -o-animation-name:  translateTornado1;
+  animation-name:  translateTornado1;
+
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation-duration: 12s;
+  -moz-animation-duration: 12s;
+  -o-animation-duration: 12s;
+  animation-duration: 12s;
+}
+
+.climacon_component-stroke_tornadoLine:nth-child(1){
+  -webkit-animation-name:  translateTornado1;
+  -moz-animation-name:  translateTornado1;
+  -o-animation-name:  translateTornado1;
+  animation-name:  translateTornado1;
+}
+
+.climacon_component-stroke_tornadoLine:nth-child(2){
+  -webkit-animation-name:  translateTornado2;
+  -moz-animation-name:  translateTornado2;
+  -o-animation-name:  translateTornado2;
+  animation-name:  translateTornado2;
+}
+
+.climacon_component-stroke_tornadoLine:nth-child(3){
+  -webkit-animation-name:  translateTornado3;
+  -moz-animation-name:  translateTornado3;
+  -o-animation-name:  translateTornado3;
+  animation-name:  translateTornado3;
+}
+
+.climacon_component-stroke_tornadoLine:nth-child(4){
+  -webkit-animation-name:  translateTornado4;
+  -moz-animation-name:  translateTornado4;
+  -o-animation-name:  translateTornado4;
+  animation-name:  translateTornado4;
+}
+
+.climacon_component-stroke_tornadoLine:nth-child(5){
+  -webkit-animation-name:  translateTornado5;
+  -moz-animation-name:  translateTornado5;
+  -o-animation-name:  translateTornado5;
+  animation-name:  translateTornado5;
+}
+
+.climacon_component-stroke_tornadoLine:nth-child(6){
+  -webkit-animation-name:  translateTornado6;
+  -moz-animation-name:  translateTornado6;
+  -o-animation-name:  translateTornado6;
+  animation-name:  translateTornado6;
+}
+
+.climacon_component-stroke_arrow-up {
+
+  fill-opacity: 0;
+
+  -webkit-animation-name: fillOpacity2, translateArrowUp;
+  -moz-animation-name: fillOpacity2, translateArrowUp;
+  -o-animation-name: fillOpacity2, translateArrowUp;
+  animation-name: fillOpacity2, translateArrowUp;
+
   -webkit-animation-duration: 3s;
   -moz-animation-duration: 3s;
   -o-animation-duration: 3s;
   animation-duration: 3s;
 
-  -webkit-animation-delay: 0;
-  -moz-animation-delay: 0;
-  -o-animation-delay: 0;
-  animation-delay: 0;
-
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
 }
 
-.climacon_componentWrap-sunrise .climacon_component-stroke_sunSpoke:nth-child(even), .climacon_componentWrap-sunset .climacon_component-stroke_sunSpoke:nth-child(even) {
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
-  animation-delay: 3s;
+.climacon_component-stroke_arrow-down {
+
+  fill-opacity: 0;
+
+  -webkit-animation-name: fillOpacity2, translateArrowDown;
+  -moz-animation-name: fillOpacity2, translateArrowDown;
+  -o-animation-name: fillOpacity2, translateArrowDown;
+  animation-name: fillOpacity2, translateArrowDown;
+
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+
 }
 
 .climacon_componentWrap-sunriseAlt {
@@ -688,224 +754,181 @@ g, path, circle, rect{
   animation-fill-mode: forwards;
 }
 
-.climacon_componentWrap-sunriseAlt .climacon_component-stroke_sunSpoke {
-  -webkit-animation-name: scale;
-  -moz-animation-name: scale;
-  -o-animation-name: scale;
-  animation-name: scale;
-
-  -webkit-animation-direction: alternate;
-  -moz-animation-direction: alternate;
-  -o-animation-direction: alternate;
-  animation-direction: alternate;
-
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  animation-duration: 3s;
+.climacon_componentWrap-sunsetAlt {
+  -webkit-animation-name: translateSunset;
+  -moz-animation-name: translateSunset;
+  -o-animation-name: translateSunset;
+  animation-name: translateSunset;
 
   -webkit-animation-delay: 0;
   -moz-animation-delay: 0;
   -o-animation-delay: 0;
   animation-delay: 0;
 
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+  -webkit-animation-duration: 12s;
+  -moz-animation-duration: 12s;
+  -o-animation-duration: 12s;
+  animation-duration: 12s;
 
-.climacon_componentWrap-sunriseAlt .climacon_component-stroke_sunSpoke:nth-child(even) {
-  -webkit-animation-delay: 3s, 3s;
-  -moz-animation-delay: 3s, 3s;
-  -o-animation-delay: 3s, 3s;
-  animation-delay: 3s, 3s;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -o-animation-direction: normal;
+  animation-direction: normal;
 
-}
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 
-.climacon_componentWrap-sunsetAlt {
-    -webkit-animation-name: translateSunset;
-    -moz-animation-name: translateSunset;
-    -o-animation-name: translateSunset;
-    animation-name: translateSunset;
-
-    -webkit-animation-delay: 0;
-    -moz-animation-delay: 0;
-    -o-animation-delay: 0;
-    animation-delay: 0;
-
-    -webkit-animation-duration: 12s;
-    -moz-animation-duration: 12s;
-    -o-animation-duration: 12s;
-    animation-duration: 12s;
-
-    -webkit-animation-direction: normal;
-    -moz-animation-direction: normal;
-    -o-animation-direction: normal;
-    animation-direction: normal;
-
-    -webkit-animation-iteration-count: 1;
-    -moz-animation-iteration-count: 1;
-    -o-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 /* ANIMATIONS */
 @-webkit-keyframes rotate{
-    0%{
-        -webkit-transform: rotate(0);
-    }
-    100%{
-        -webkit-transform: rotate(360deg);
-    }   
+  0%{
+    -webkit-transform: rotate(0);
+  }
+  100%{
+    -webkit-transform: rotate(360deg);
+  }   
 }
-
 
 @-moz-keyframes rotate{
-    0%{
-        -moz-transform: rotate(0);
-    }
-    100%{
-        -moz-transform: rotate(360deg);
-    }   
+  0%{
+    -moz-transform: rotate(0);
+  }
+  100%{
+    -moz-transform: rotate(360deg);
+  }   
 }
-
 
 @-o-keyframes rotate{
-    0%{
-        -o-transform: rotate(0);
-    }
-    100%{
-        -o-transform: rotate(360deg);
-    }   
+  0%{
+    -o-transform: rotate(0);
+  }
+  100%{
+    -o-transform: rotate(360deg);
+  }   
 }
 
-
 @keyframes rotate{
-    0%{
-        transform: rotate(0);
-    }
-    100%{
-        transform: rotate(360deg);
-    }   
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }   
 }
 
 @-webkit-keyframes wobble{
-    0%{
-        -webkit-transform: rotate(0);
-    }
-    25%{
-        -webkit-transform: rotate(-15deg);
-    }
-    50%{
-        -webkit-transform: rotate(0);
-    }
-    75%{
-        -webkit-transform: rotate(15deg);
-    }
-    100%{
-        -webkit-transform: rotate(0deg);
-    }
+  0%{
+    -webkit-transform: rotate(0);
+  }
+  25%{
+    -webkit-transform: rotate(-15deg);
+  }
+  50%{
+    -webkit-transform: rotate(0);
+  }
+  75%{
+    -webkit-transform: rotate(15deg);
+  }
+  100%{
+    -webkit-transform: rotate(0deg);
+  }
 }
 
 @-moz-keyframes wobble{
-    0%{
-        -moz-transform: rotate(0);
-    }
-    25%{
-        -moz-transform: rotate(-15deg);
-    }
-    50%{
-        -moz-transform: rotate(0);
-    }
-    75%{
-        -moz-transform: rotate(15deg);
-    }
-    100%{
-        -moz-transform: rotate(0deg);
-    }
+  0%{
+    -moz-transform: rotate(0);
+  }
+  25%{
+    -moz-transform: rotate(-15deg);
+  }
+  50%{
+    -moz-transform: rotate(0);
+  }
+  75%{
+    -moz-transform: rotate(15deg);
+  }
+  100%{
+    -moz-transform: rotate(0deg);
+  }
 }
 
 @-o-keyframes wobble{
-    0%{
-        -o-transform: rotate(0);
-    }
-    25%{
-        -o-transform: rotate(-15deg);
-    }
-    50%{
-        -o-transform: rotate(0);
-    }
-    75%{
-        -o-transform: rotate(15deg);
-    }
-    100%{
-        -o-transform: rotate(0deg);
-    }
+  0%{
+    -o-transform: rotate(0);
+  }
+  25%{
+    -o-transform: rotate(-15deg);
+  }
+  50%{
+    -o-transform: rotate(0);
+  }
+  75%{
+    -o-transform: rotate(15deg);
+  }
+  100%{
+    -o-transform: rotate(0deg);
+  }
 }
 
 @keyframes wobble{
-    0%{
-        transform: rotate(0);
-    }
-    25%{
-        transform: rotate(-15deg);
-    }
-    50%{
-        transform: rotate(0);
-    }
-    75%{
-        transform: rotate(15deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
+  0%{
+    transform: rotate(0);
+  }
+  25%{
+    transform: rotate(-15deg);
+  }
+  50%{
+    transform: rotate(0);
+  }
+  75%{
+    transform: rotate(15deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 
 @-webkit-keyframes scale{
-    0%{
-        -webkit-transform: scale(1,1);
-    }
-    100%{
-        -webkit-transform: scale(.5,.5);
-    }   
+  0%{
+    -webkit-transform: scale(1,1);
+  }
+  100%{
+    -webkit-transform: scale(.5,.5);
+  }   
 }
 
 @-moz-keyframes scale{
-    0%{
-        -moz-transform: scale(1,1);
-    }
-    100%{
-        -moz-transform: scale(.5,.5);
-    }   
+  0%{
+    -moz-transform: scale(1,1);
+  }
+  100%{
+    -moz-transform: scale(.5,.5);
+  }   
 }
 
 @-o-keyframes scale{
-    0%{
-        -o-transform: scale(1,1);
-    }
-    100%{
-        -o-transform: scale(.5,.5);
-    }   
+  0%{
+    -o-transform: scale(1,1);
+  }
+  100%{
+    -o-transform: scale(.5,.5);
+  }   
 }
 
 @keyframes scale{
-    0%{
-        transform: scale(1,1);
-    }
-    100%{
-        transform: scale(.5,.5);
-    }   
+  0%{
+    transform: scale(1,1);
+  }
+  100%{
+    transform: scale(.5,.5);
+  }   
 }
 
 @-webkit-keyframes behindCloudMove {
@@ -927,7 +950,6 @@ g, path, circle, rect{
     -moz-transform: translateX(0) translateY(0);
   }
 }
-
 
 @-o-keyframes behindCloudMove {
   0% {
@@ -1028,7 +1050,6 @@ g, path, circle, rect{
     transform: translateY(14px);
   }
 }
-
 
 @-webkit-keyframes rainFall2 {
   0% {
@@ -4431,20 +4452,20 @@ g, path, circle, rect{
 }
 
 @-webkit-keyframes fillOpacity2 {
-      0% {
-        fill-opacity: 0;
-        stroke-opacity: 0;
-      }
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-      50% {
-        fill-opacity: 1;
-        stroke-opacity: 1;
-      }
+  50% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-      100% {
-        fill-opacity: 0;
-        stroke-opacity: 0;
-      }
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 }
 
 @-moz-keyframes fillOpacity2 {
@@ -4499,50 +4520,50 @@ g, path, circle, rect{
 }
 
 @-webkit-keyframes lightningFlash {
-    0% {
-      fill-opacity: 0;
-      stroke-opacity: 0;
-    }
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-    1% {
-      fill-opacity: 1;
-      stroke-opacity: 1;
-    }
+  1% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-    7% {
-      fill-opacity: 0;
-      stroke-opacity: 0;
-    }
+  7% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-    50% {
-      fill-opacity: 0;
-      stroke-opacity: 0;
-    }
+  50% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-    51% {
-      fill-opacity: 1;
-      stroke-opacity: 1;
-    }
+  51% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-    53% {
-      fill-opacity: 0;
-      stroke-opacity: 0;
-    }
+  53% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-    54% {
-      fill-opacity: 1;
-      stroke-opacity: 1;
-    }
+  54% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-    60% {
-      fill-opacity: 0;
-      stroke-opacity: 0;
-    }
+  60% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-    100% {
-      fill-opacity: 0;
-      stroke-opacity: 0;
-    }
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 }
 
 @-moz-keyframes lightningFlash {

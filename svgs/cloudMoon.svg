@@ -44,18 +44,34 @@
 
         }
 
-        .climacon_componentWrap-moon{
-            -webkit-animation-name: rotate;
-            -moz-animation-name: rotate;
-            -o-animation-name: rotate;
-            animation-name: rotate;
-            -webkit-animation-timing-function: linear;
-            -moz-animation-timing-function: linear;
-            -o-animation-timing-function: linear;
-            animation-timing-function: linear;
-        }
+       .climacon_componentWrap-moon_cloud {
+            -webkit-animation-name: behindCloudMove, wobble;
+            -moz-animation-name: behindCloudMove, wobble;
+            -o-animation-name: behindCloudMove, wobble;
+            animation-name: behindCloudMove, wobble;
 
-        @-webkit-keyframes rotate{
+            -webkit-animation-iteration-count: 1, infinite;
+            -moz-animation-iteration-count: 1, infinite;
+            -o-animation-iteration-count: 1, infinite;
+            animation-iteration-count: 1, infinite;
+
+            -webkit-animation-timing-function: ease-out, linear;
+            -moz-animation-timing-function: ease-out, linear;
+            -o-animation-timing-function: ease-out, linear;
+            animation-timing-function: ease-out, linear;
+
+            -webkit-animation-delay: 0, 3s;
+            -moz-animation-delay: 0, 3s;
+            -o-animation-delay: 0, 3s;
+            animation-delay: 0, 3s;
+
+            -webkit-animation-duration: 3s, 12s;
+            -moz-animation-duration: 3s, 12s;
+            -o-animation-duration: 3s, 12s;
+            animation-duration: 3s, 12s;
+        }
+        
+     @-webkit-keyframes wobble{
             0%{
                 -webkit-transform: rotate(0);
             }
@@ -73,7 +89,7 @@
             }
         }
 
-        @-moz-keyframes rotate{
+        @-moz-keyframes wobble{
             0%{
                 -moz-transform: rotate(0);
             }
@@ -91,7 +107,8 @@
             }
         }
 
-        @-o-keyframes rotate{
+        @-o-keyframes wobble{
+
             0%{
                 -o-transform: rotate(0);
             }
@@ -109,7 +126,7 @@
             }
         }
 
-        @keyframes rotate{
+        @keyframes wobble{
             0%{
                 transform: rotate(0);
             }
@@ -126,6 +143,46 @@
                 transform: rotate(0deg);
             }
         }
+
+        @-webkit-keyframes behindCloudMove {
+            0% {
+                -webkit-transform: translateX(-1.75px) translateY(1.75px);
+            }
+
+            100% {
+                -webkit-transform: translateX(0) translateY(0);
+            }
+        }
+
+            @-moz-keyframes behindCloudMove {
+            0% {
+                -moz-transform: translateX(-1.75px) translateY(1.75px);
+            }
+
+            100% {
+                -moz-transform: translateX(0) translateY(0);
+            }
+         }
+
+         @-o-keyframes behindCloudMove {
+            0% {
+                -o-transform: translateX(-1.75px) translateY(1.75px);
+            }
+
+            100% {
+                -o-transform: translateX(0) translateY(0);
+            }
+        }
+
+        @keyframes behindCloudMove {
+            0% {
+                transform: translateX(-1.75px) translateY(1.75px);
+            }
+            100% {
+                transform: translateX(0) translateY(0);
+            }
+        }
+
 
     ]]></style>
     <clipPath id="cloudFillClip">
