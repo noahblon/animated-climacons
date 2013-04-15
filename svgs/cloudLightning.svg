@@ -41,10 +41,10 @@
         /* LIGHTNING */
         .climacon_component-stroke_lightning {
             fill-opacity: 0;
-            -webkit-animation-name: fillOpacityLightning;
-            -moz-animation-name: fillOpacityLightning;
-            -o-animation-name: fillOpacityLightning;
-            animation-name: fillOpacityLightning;
+            -webkit-animation-name: lightningFlash;
+            -moz-animation-name: lightningFlash;
+            -o-animation-name: lightningFlash;
+            animation-name: lightningFlash;
 
             -webkit-animation-iteration-count: infinite;
             -moz-animation-iteration-count: infinite;
@@ -68,194 +68,193 @@
 
         }
 
-        @-webkit-keyframes fillOpacityLightning {
-          0% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  @-webkit-keyframes lightningFlash {
+    0% {
+      fill-opacity: 0;
+      stroke-opacity: 0;
+    }
 
-          1% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+    1% {
+      fill-opacity: 1;
+      stroke-opacity: 1;
+    }
 
-          7% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+    7% {
+      fill-opacity: 0;
+      stroke-opacity: 0;
+    }
 
-          50% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+    50% {
+      fill-opacity: 0;
+      stroke-opacity: 0;
+    }
 
-          51% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+    51% {
+      fill-opacity: 1;
+      stroke-opacity: 1;
+    }
 
-          53% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+    53% {
+      fill-opacity: 0;
+      stroke-opacity: 0;
+    }
 
-          54% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+    54% {
+      fill-opacity: 1;
+      stroke-opacity: 1;
+    }
 
-          60% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+    60% {
+      fill-opacity: 0;
+      stroke-opacity: 0;
+    }
 
-          100% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
-        }
+    100% {
+      fill-opacity: 0;
+      stroke-opacity: 0;
+    }
+}
 
-        @-moz-keyframes fillOpacityLightning {
-          0% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+@-moz-keyframes lightningFlash {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          1% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+  1% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-          7% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  7% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          50% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  50% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          51% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+  51% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-          53% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  53% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          54% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+  54% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-          60% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  60% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          100% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
-        }
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+}
 
-        @-o-keyframes fillOpacityLightning {
-          0% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+@-o-keyframes lightningFlash {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          1% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+  1% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-          7% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  7% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          50% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  50% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          51% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+  51% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-          53% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  53% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          54% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+  54% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-          60% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  60% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          100% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
-        }
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+}
 
-        @keyframes fillOpacityLightning {
-          0% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+@keyframes lightningFlash {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          1% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+  1% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-          7% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  7% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          50% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  50% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          51% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+  51% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-          53% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  53% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          54% {
-            fill-opacity: 1;
-            stroke-opacity: 1;
-          }
+  54% {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+  }
 
-          60% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
+  60% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-          100% {
-            fill-opacity: 0;
-            stroke-opacity: 0;
-          }
-        }
-
+  100% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
+}
     ]]></style>
   
     <g class="climacon_iconWrap climacon_iconWrap-cloudLightning">

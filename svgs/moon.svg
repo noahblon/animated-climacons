@@ -45,13 +45,13 @@
         }
 
         .climacon_componentWrap-moon{
-            -webkit-animation-name: rotate;
-            -moz-animation-name: rotate;
-            -o-animation-name: rotate;
-            animation-name: rotate;
+            -webkit-animation-name: wobble;
+            -moz-animation-name: wobble;
+            -o-animation-name: wobble;
+            animation-name: wobble;
         }
 
-        @-webkit-keyframes rotate{
+        @-webkit-keyframes wobble{
             0%{
                 -webkit-transform: rotate(0);
             }
@@ -69,7 +69,7 @@
             }
         }
 
-        @-moz-keyframes rotate{
+        @-moz-keyframes wobble{
             0%{
                 -moz-transform: rotate(0);
             }
@@ -87,7 +87,7 @@
             }
         }
 
-        @-o-keyframes rotate{
+        @-o-keyframes wobble{
             0%{
                 -o-transform: rotate(0);
             }
@@ -105,7 +105,7 @@
             }
         }
 
-        @keyframes rotate{
+        @keyframes wobble{
             0%{
                 transform: rotate(0);
             }

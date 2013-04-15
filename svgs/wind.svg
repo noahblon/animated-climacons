@@ -45,9 +45,24 @@
         }
 
         .climacon_componentWrap-wind{
+          -webkit-animation-name: translateWind;
+          -moz-animation-name: translateWind;
+          -o-animation-name: translateWind;
           animation-name: translateWind;
+
+          -webkit-animation-duration: 4s;
+          -moz-animation-duration: 4s;
+          -o-animation-duration: 4s;
           animation-duration: 4s;
+
+          -webkit-animation-direction: alternate;
+          -moz-animation-direction: alternate;
+          -o-animation-direction: alternate;
           animation-direction: alternate;
+
+          -webkit-animation-timing-function: ease-in-out;
+          -moz-animation-timing-function: ease-in-out;
+          -o-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
         }
 
