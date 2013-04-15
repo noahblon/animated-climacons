@@ -66,44 +66,77 @@
           animation-timing-function: ease-in-out;
         }
 
-        @-webkit-keyframes translateWind{
-            0%{
-                -webkit-transform: rotate(0);
-            }
-            100%{
-                -webkit-transform: rotate(360deg);
-            }   
+        @-webkit-keyframes translateWind {
+          0% {
+            -webkit-transform: translateY(0);
+          }
+
+          25% {
+            -webkit-transform: translateX(4.998px);
+          }
+
+          75% {
+            -webkit-transform: translateX(-4.998px);
+          }
+
+          100% {
+            -webkit-transform: translateX(0);
+          }
         }
 
-        @-moz-keyframes translateWind{
-            0%{
-                -moz-transform: rotate(0);
-            }
-            100%{
-                -moz-transform: rotate(360deg);
-            }   
+        @-moz-keyframes translateWind {
+          0% {
+            -moz-transform: translateY(0);
+          }
+
+          25% {
+            -moz-transform: translateX(4.998px);
+          }
+
+          75% {
+            -moz-transform: translateX(-4.998px);
+          }
+
+          100% {
+            -moz-transform: translateX(0);
+          }
         }
 
+        @-o-keyframes translateWind {
+          0% {
+            -o-transform: translateY(0);
+          }
 
-        @-o-keyframes translateWind{
-            0%{
-                -o-transform: rotate(0);
-            }
-            100%{
-                -o-transform: rotate(360deg);
-            }   
+          25% {
+            -o-transform: translateX(4.998px);
+          }
+
+          75% {
+            -o-transform: translateX(-4.998px);
+          }
+
+          100% {
+            -o-transform: translateX(0);
+          }
         }
 
+        @keyframes translateWind {
+          0% {
+            transform: translateY(0);
+          }
 
-        @keyframes translateWind{
-            0%{
-                transform: rotate(0);
-            }
-            100%{
-                transform: rotate(360deg);
-            }   
+          25% {
+            transform: translateX(4.998px);
+          }
+
+          75% {
+            transform: translateX(-4.998px);
+          }
+
+          100% {
+            transform: translateX(0);
+          }
         }
-
     ]]></style>
     <g class="climacon_iconWrap climacon_iconWrap-wind">
         <g class="climacon_wrapperComponent climacon_componentWrap-wind">
