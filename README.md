@@ -2,7 +2,7 @@
 Adam Whitcroft's Climacons as SVGs animated with CSS.
 
 
-Visit the [Climacons Font](http://adamwhitcroft.com/climacons/font/) website for the original font.
+Visit the [Climacons Font](http://adamwhitcroft.com/climacons/font/) website to download the original icons..
 
 ##To Do
 
