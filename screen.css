@@ -129,8 +129,10 @@ g, path, circle, rect{
     animation-name: rotate;
 }
 
-.climacon_component-stroke_sunSpoke {
-
+.climacon_iconWrap-sun .climacon_component-stroke_sunSpoke,
+.climacon_iconWrap-sunFill .climacon_component-stroke_sunSpoke  {
+    fill-opacity: 1;
+    
     -webkit-animation-name: scale;
     -moz-animation-name: scale;
     -o-animation-name: scale;

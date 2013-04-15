@@ -1,5 +1,5 @@
 #Animated SVG Climacons v. 0.2
-Adam Whitcroft's Climacons as SVGs animated with CSS.
+Adam Whitcroft's Climacons as SVGs animated with CSS by Noah Blon.
 
 Visit the [Climacons Font](http://adamwhitcroft.com/climacons/font/) website to download the original icons.
 
