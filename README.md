@@ -12,7 +12,7 @@ Original icons: [Climacons](//adamwhitcroft.com/climacons/)
 Install package with [Bower](//bower.io/):
 
 ```bash
-bower install animated-climacons
+bower install animated-climacons --save-dev
 ```
 
 ### Structure
